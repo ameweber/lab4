@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Lab 4</title>
+</head>
+<body>
+<div class="container mt-5 ">
+    <div class="row customShadow back">
+        <div class="col-sm-5">
+            <div class="leftSide">
+                <div class="form-group ">
+                    <label for="textarea">Введите текст</label>
+                    <textarea class="form-control" id="textarea" rows="7" style="background-color: #E9EDF9; border:3px solid #F6F7F9; border-radius:15px"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div class="rightSide">
+                <div class="form-row" style="
+    padding-bottom: 20px;
+">
+                    <div class="form-group col ">
+                        <label for="fontText">Шрифт</label>
+                        <select id="fontText" class="form-control"  style="background-color: #E9EDF9;">
+                            <option selected>Myriad Pro</option>
+                            <option>Circe</option>
+                            <option>Times New Roman</option>
+                            <option>Segoe Script</option>
+                            <option>Comfortaa</option>
+                            <option>Roboto</option>
+                        </select>
+                    </div>
+                    <div class="form-group  col">
+                        <label for="fontSize">Размер текста</label>
+                        <select id="fontSize" class="form-control" style="background-color: #E9EDF9;">
+                            <option selected>10</option>
+                            <option>30</option>
+                            <option>60</option>
+                            <option>100</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="fontWeight">Толщина текста</label>
+                        <select id="fontWeight" class="form-control" style="background-color: #E9EDF9;">
+                            <option selected>100</option>
+                            <option>400</option>
+                            <option>700</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div>
+                <label for="option1">Цвет</label>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary active rounded-circle mx-1 p-3">
+                       <input type="radio" value="text-primary" name="options" id="option1" class="colorChange" checked>
+                    </label>
+                    <label class="btn btn-secondary rounded-circle mx-1 p-3">
+                        <input type="radio" value="text-secondary" name="options" id="option2" class="colorChange">
+                    </label>
+                    <label class="btn btn-success rounded-circle mx-1 p-3">
+                        <input type="radio" name="options" id="option3" class="colorChange" value="text-success">
+                    </label>
+                    <label class="btn btn-danger rounded-circle mx-1 p-3">
+                        <input type="radio" name="options" id="option4" class="colorChange" value="text-danger">
+                    </label>
+                    <label class="btn btn-warning rounded-circle mx-1 p-3">
+                        <input type="radio" name="options" id="option5" class="colorChange" value="text-warning">
+                    </label>
+                    <label class="btn btn-info rounded-circle mx-1 p-3" >
+                        <input type="radio" name="options" id="option6" class="colorChange" value="text-info">
+                    </label>
+                </div>
+                </div>
+
+                <div class="form-row" style="
+                 padding-top: 20px;" >
+                    <label for="form-group radio" style="
+                 padding-left: 5px;">Выключка текста</label>
+                    <div class="form-group col" id="form-group radio" style="
+                 padding-left: 20px;">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input textAlign" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                   value="text-left" checked>
+                            <label class="form-check-label" for="inlineRadio1">Слева</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input textAlign" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                   value="text-right">
+                            <label class="form-check-label" for="inlineRadio2">Справа</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input textAlign" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                   value="text-center">
+                            <label class="form-check-label" for="inlineRadio3">По центру</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <!--                <div class="col">-->
+                    <button type="submit" id="submit" class="btn btn-primary">Опубликовать</button>
+                    <!--                </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="resultContainer col-sm-12" id="finalText">
+            <div class="container">
+                <p style="font-weight: 700;">Результат</p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

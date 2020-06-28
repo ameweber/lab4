@@ -1,0 +1,43 @@
+body {
+    background: #EEF2FB;
+    color: #56658C;
+    font-size: 18px;
+}
+.customShadow {
+    box-shadow: 18.656px 24.758px 50.74px 8.26px rgba(18, 15, 35, 0.06);
+    border-radius: 10px;
+}
+
+label {
+    font-weight: 500;
+}
+
+.leftSide {
+    padding: 30px;
+}
+
+.rightSide {
+    padding: 30px;
+}
+
+.resultContainer {
+    margin-top: 30px;
+}
+
+.resultItem {
+    margin-top: 20px;
+    padding: 30px;
+}
+
+
+
+textarea {
+    height: 178px;
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
+    border-radius: 16px;
+}
+
+.back {
+    background: #EEF2FB;
+}
+
